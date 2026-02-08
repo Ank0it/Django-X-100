@@ -14,3 +14,10 @@
 - Used template inheritance with `{% extends %}` and `{% block %}`
 - Built an app page: all_app
 - Note: Include the app's `urls.py` in the project `urls.py` for routing.
+
+# DAY 3
+- Topic: Models, migrations, and the Django admin
+- Methods learned: defining a `models.Model`, running `makemigrations` and `migrate`
+- Methods learned: registering models in `admin.py` and creating a superuser
+- Built pages: model-driven list view
+- Note: Run migrations after model changes to update the database schema.
