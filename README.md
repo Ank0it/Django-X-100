@@ -21,3 +21,11 @@
 - Methods learned: registering models in `admin.py` and creating a superuser
 - Built pages: model-driven list view
 - Note: Run migrations after model changes to update the database schema.
+
+# DAY 4
+- Topic: Detail pages and dynamic URLs
+- Methods learned: `get_object_or_404()` for safe lookups
+- Added route with `path('<int:app_id>/')` and template link using `{% url %}`
+- Built pages: app_details
+- Updated model: added `description` field and ran migrations
+- Note: Keep URL name consistency to avoid `NoReverseMatch` errors.
