@@ -11,7 +11,13 @@ class AppVariety(models.Model):
         ('AA','Agentic AI'),
     ]
 
-    name=models.CharField(max_length=100)
-    image=models.ImageField(upload_to='apps')
-    date_added=models.DateTimeField(default=timezone.now) 
-    type=models.CharField(max_length=2, choices=APP_TYPE_CHOICES)
+    
+    name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='apps/')
+    date_added = models.DateTimeField(default=timezone.now)
+    type = models.CharField(max_length=2, choices=APP_TYPE_CHOICES)
+    description=models.TextField(default='') 
+
+    def __str__(self):
+        return self.name
+    

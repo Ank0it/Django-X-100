@@ -3,4 +3,5 @@ from .import views
 
 urlpatterns = [
        path('',views.all_app, name='all_app'),
+       path('<int:app_id>/',views.app_details, name='app_details')
 ]

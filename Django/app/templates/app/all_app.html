@@ -6,4 +6,21 @@ Home Page
 
 {% block content %}
 <h1>All AI apps for youu </h1>
+  
+<div class="grid grid-cols-4 gap-4 m-4">
+{% for app in apps %}
+  <div class="bg-pink-900 p-5">
+    <img class="rounded shadow-lg" src="{{app.image.url}}" alt="">
+    <h3>{{app.name}}</h3>
+    <a href="{% url 'app_details' app.id %}">
+      <button type="button" class="inline-flex w-[100%] items-center px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600"> 
+        {{app.type}} - {{app.id}}
+      </button>
+    </a>     
+  </div>
+
+{% endfor %} 
+</div>
 {% endblock %}
+
+
