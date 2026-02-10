@@ -29,3 +29,10 @@
 - Built pages: app_details
 - Updated model: added `description` field and ran migrations
 - Note: Keep URL name consistency to avoid `NoReverseMatch` errors.
+
+# DAY 5
+- Topic: Model relationships and admin customization
+- Methods learned: `ForeignKey`, `ManyToManyField`, `OneToOneField` relationships
+- Methods learned: `TabularInline` and `ModelAdmin` with `list_display`
+- Built pages: admin data entry with inline reviews
+- Note: Keep related field names consistent for reverse lookups (e.g., `related_name`).
